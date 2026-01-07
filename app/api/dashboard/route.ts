@@ -11,7 +11,6 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     
-    // Forward the request to the webhook
     const response = await fetch(
       'https://n8n.benai.agency/webhook/8aca6b12-9734-4ead-a836-a0ef46f94293',
       {
